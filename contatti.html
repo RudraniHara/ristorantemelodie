@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>Melodie - Prenotazioni</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="pizza, ristorante, menu, prenotazioni, cene, pranzo, serate, cucina italiana, pasta, ragu"
+        name="keywords">
+    <meta content="Sito per ristorante italiano, cucina tipica e ricercata" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- ANGULAR CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cinzel:wght@600&family=Inconsolata:wght@300&family=Julius+Sans+One&family=Montserrat&family=Sono:wght@200&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div> -->
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-light" title="Home link" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item"><a class="small text-light" title="contacts link"
+                            href="contatti.html">Contatti</a></li>
+
+                </ol>
+
+                <button id="indietro" class="btn btn-primary rounded-pill"> Indietro </button>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Ora locale:</small>
+                <p id="ora"></p>
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square text-primary border-end rounded-0" title="logo facebook" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn-lg-square text-primary border-end rounded-0" title="logo twitter" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn-lg-square text-primary border-end rounded-0" title="logo linkedin" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-lg-square text-primary pe-0" title="logo instagram" href=""><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s"
+        role="navigation">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 id="logo" class="animate__animated animate__fadeInTopLeft text-primary m-0" ;
+                style="font-family: 'Sono', sans-serif;">Melodie</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="animate__animated animate__fadeInDown collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link white2">Home</a>
+                <a href="chisiamo.html" class="nav-item nav-link white2">Chi siamo</a>
+                <a href="cassa.html" class="nav-item nav-link white2">Area dipendenti</a>
+                <a href="prenotazioni.html" class="nav-item nav-link white2">Prenotazioni</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle white2" data-bs-toggle="dropdown">Menu</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="menu_natale.html" class="dropdown-item">Menu Natale</a>
+                        <a href="menu_capodanno.html" class="dropdown-item">Menu Capodanno</a>
+                    </div>
+                </div>
+                <a href="contatti.html" class="nav-item nav-link  active">Contatti</a>
+            </div>
+            <div class="media_position">
+                <div class=" d-none d-lg-flex">
+                    <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                        <i class="fa fa-phone text-primary" title="logo telefono"></i>
+                    </div>
+
+                    <div class="ps-3">
+                        <small class="text-primary mb-0">Chiamaci</small>
+                        <p class="text-light fs-5 mb-0">+012 345 6789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contact Start -->
+    <section role="region">
+        <div id="booking2" class="section">
+            <div class="section-center">
+            </div>
+            <div class="container-xxl py-6">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <p class="text-primary text-uppercase mb-2">// Contattaci</p>
+                        <h1 class="display-6 mb-4" style="color:white !important">Per qualsiasi richiesta contattaci
+                            qui!</h1>
+                    </div>
+                    <div class="row g-0 justify-content-center">
+                        <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                            <form id="formContatto" ng-app="myApp" , ng-controller="mioController" name="myForm"
+                                role="form" title="form dei contatti">
+                                <div class="row g-3">
+                                    <div class="div_fantoccio6"> * i campi sono obbligatori</div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input name="text" ng-model="utente.nome" class="form-control"
+                                                aria-label="Inserimento nome" required>
+                                            <label for="name" class="label_class" aria-label="etichetta nome">Nome
+                                                *</label>
+                                        </div>
+                                        <span ng-show="myForm.text.$invalid" class="white">Compilare il campo!</span>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" name="myAddress"
+                                                ng-model="mail.email" aria-label="Inserimento mail" required>
+                                            <label for="email" class="label_class" aria-label="etichetta email">Email
+                                                *</label>
+
+                                        </div>
+                                        <span ng-show="myForm.myAddress.$error.email || myForm.myAddress.$invalid"
+                                            class="white">Indirizzo mail non valido</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" title="campo soggetto obbligatorio" name="soggetto"
+                                                class="form-control" ng-model="soggetto.motivo"
+                                                aria-label="Inserimento soggetto" required>
+                                            <label for="subject" class="label_class"
+                                                aria-label="etichetta soggetto">Soggetto *</label>
+                                        </div>
+                                        <span ng-show="myForm.soggetto.$invalid" class="white">Compilare il
+                                            campo!</span>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here"
+                                                id="message" aria-label="Inserimenti messaggio">{{saluta()}}</textarea>
+                                            <label for="message" class="label_class"
+                                                aria-label="etichetta messaggio">Messaggio *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button id="contattaci" class="btn btn-primary rounded-pill py-3 px-5"
+                                            type="submit" aria-label="bottone di submit"
+                                            ng-disabled="myForm.soggetto.$invalid || myForm.text.$invalid || myForm.myAddress.$error.email || myForm.myAddress.$invalid">Invia
+                                            messaggio</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="div_fantoccio5"></div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <footer role="contentinfo">
+        <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Indirizzo</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3" title="indirizzo"></i>via del popolo di
+                            Roma, n.5, Torino (10040)</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3" title="contatto telefonico"></i>+012 345 67890
+                        </p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"
+                                title="contatto mail"></i>melodiedelpassato@italia.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" title="logo twitter"
+                                href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" title="logo facebook"
+                                href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-1" title="logo youtube"
+                                href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square btn-outline-light rounded-circle me-0" title="logo linkedin"
+                                href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Link utili</h4>
+                        <a class="btn btn-link" href="chisiamo.html">Chi siamo</a>
+                        <a class="btn btn-link" href="cassa.html">Cassa</a>
+                        <a class="btn btn-link" href="prenotazioni.html">Prenotazioni</a>
+                        <a class="btn btn-link" href="contatti.html">Contatti</a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="text-light mb-4">Galleria</h4>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt=""
+                                    title="prodotti cucina 1">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt=""
+                                    title="prodotti cucina 2">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt=""
+                                    title="prodotti cucina 3">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid bg-light rounded p-1" src="img/product-4.jpg" alt=""
+                                    title="prodotti cucina 4">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid bg-light rounded p-1" src="img/product-5.jpg" alt=""
+                                    title="prodotti cucina 5">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid bg-light rounded p-1" src="img/product-6.jpg" alt=""
+                                    title="prodotti cucina 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    </div> -->
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a href="index.html">Turbil Elisa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/myApp.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>

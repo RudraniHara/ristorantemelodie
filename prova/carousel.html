@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+let array_immagini = new Array(4);
+array_immagini[0]= "img/cosa_cuciniamo_1.jpg";
+array_immagini[1]= "img/cosa_cuciniamo_2.jpg";
+array_immagini[2]= "img/cosa_cuciniamo_3.jpg";
+array_immagini[3]= "img/cosa_cuciniamo_4.jpg";
+let numero_immagini_random = Math.floor(Math.random()*4);
+
+function diverseImg(){
+        document.getElementById("imgdacambiare").src = array_immagini[numero_immagini_random];
+}
+
+    </script>
+
+</head>
+<body>
+   
+
+  <img id="imgdacambiare" class="img-fluid rounded"  src="img/cosa_cuciniamo_1.jpg" alt="">
+    
+</body>
+</html>
